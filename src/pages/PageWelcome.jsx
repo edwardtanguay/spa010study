@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useContext } from 'react';
+import { AppContext } from '../AppContext';
 
 export const PageWelcome = () => {
-	const [status, setStatus] = useState('offline');
-
+	const { status, setStatus } = useContext(AppContext);
+	
 	return (
 		<div className="page_welcome">
 			<h2>Welcome</h2>
