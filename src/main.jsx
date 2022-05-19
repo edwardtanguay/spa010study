@@ -7,7 +7,7 @@ import { AppProvider } from './AppContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<BrowserRouter>
-		<AppProvider>
+		<AppProvider logging="false">
 			<App />
 		</AppProvider>
 	</BrowserRouter>
